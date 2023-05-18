@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "TensorFlowLiteSwiftPackage",
+    name: "TFLiteSwiftPackage",
     platforms: [
         .iOS(.v15),
     ],
     products: [
-        .library(name: "TensorFlowLiteSwiftPackage", targets: ["TensorFlowLiteSwiftPackage"]),
+        .library(name: "TFLiteSwiftPackage", targets: ["TFLiteSwiftPackage"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "TensorFlowLiteSwiftPackage",
+            name: "TFLiteSwiftPackage",
             dependencies: [
                 "TensorFlowLiteC", "TensorFlowLiteCCoreML" , "TensorFlowLiteCMetal","TensorFlowLiteSelectTfops"
             ]),
